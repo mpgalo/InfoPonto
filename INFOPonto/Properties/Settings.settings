@@ -1,0 +1,48 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="INFOPonto.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="smtp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">smtp.gmail.com</Value>
+    </Setting>
+    <Setting Name="loginSmtp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">infotimewebmail@gmail.com</Value>
+    </Setting>
+    <Setting Name="senhaSmtp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">21038888</Value>
+    </Setting>
+    <Setting Name="email" Type="System.String" Scope="User">
+      <Value Profile="(Default)">infotimewebmail@gmail.com</Value>
+    </Setting>
+    <Setting Name="porta" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">587</Value>
+    </Setting>
+    <Setting Name="enableSsl" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="rptLogin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">infoponto</Value>
+    </Setting>
+    <Setting Name="rptPwd" Type="System.String" Scope="User">
+      <Value Profile="(Default)">649731</Value>
+    </Setting>
+    <Setting Name="pastaArquivosServidor" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\server-dados\SISTEMAS\INFOPONTO\ArquivosRecado</Value>
+    </Setting>
+    <Setting Name="rptCaminhoAdministrativo" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\servidor\Sistemas\InfoPonto\Administrativo\Rpt\</Value>
+    </Setting>
+    <Setting Name="connectionstring" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Data Source=SERVER-DADOS;Initial Catalog=InfoPonto;uid=infoponto;pwd=649731;TimeOut=0;</Value>
+    </Setting>
+    <Setting Name="redeLogin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">InfoPonto</Value>
+    </Setting>
+    <Setting Name="redeSenha" Type="System.String" Scope="User">
+      <Value Profile="(Default)">649731</Value>
+    </Setting>
+    <Setting Name="servidorArquivos" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\server-dados</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

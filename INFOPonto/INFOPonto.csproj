@@ -1,0 +1,335 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="Current">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AC41B3CA-9120-42AB-A8FD-BF26BEAC9F0F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>INFOPonto</RootNamespace>
+    <AssemblyName>INFOPonto</AssemblyName>
+    <StartupObject>INFOPonto.Program</StartupObject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <ApplicationIcon>Resources\CLOCK.ICO</ApplicationIcon>
+    <PublishUrl>http://localhost/INFOPonto/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Administrativo\Cadastros\Contato.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrativo\Cadastros\Contato.Designer.cs">
+      <DependentUpon>Contato.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrativo\Cadastros\Ponto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrativo\Cadastros\Ponto.Designer.cs">
+      <DependentUpon>Ponto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrativo\Cadastros\Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrativo\Cadastros\Usuario.Designer.cs">
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrativo\Cadastros\Cargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrativo\Cadastros\Cargo.Designer.cs">
+      <DependentUpon>Cargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrativo\Relatorios\RelatorioHorasTrabalhadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Administrativo\Relatorios\RelatorioHorasTrabalhadas.Designer.cs">
+      <DependentUpon>RelatorioHorasTrabalhadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Administrativo\Rpt\RelatorioHorasTrabalhadas.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RelatorioHorasTrabalhadas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\InfoToolStripComboBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DAO\ContatoDAO.cs" />
+    <Compile Include="MODEL\ContatoModel.cs" />
+    <Compile Include="Rede\NetworkDrives.cs" />
+    <Compile Include="Common\DefaultForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Common\InfoCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Common\NumericTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DAO\RecadoDAO.cs" />
+    <Compile Include="Rede\NetworkLogon.cs" />
+    <Compile Include="MODEL\ArquivoModel.cs" />
+    <Compile Include="MODEL\EnderecoModel.cs" />
+    <Compile Include="MODEL\RecadoModel.cs" />
+    <Compile Include="Rede\NetworkHelper.cs" />
+    <Compile Include="RN\ContatoRN.cs" />
+    <Compile Include="RN\RecadoRN.cs" />
+    <Compile Include="RN\UsuarioRN.cs" />
+    <Compile Include="Usuario\Cadastros\AlteracaoUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\Cadastros\AlteracaoUsuario.Designer.cs">
+      <DependentUpon>AlteracaoUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\Comunicacao\BaixaAnexo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\Comunicacao\BaixaAnexo.Designer.cs">
+      <DependentUpon>BaixaAnexo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\Comunicacao\Recados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\Comunicacao\Recados.Designer.cs">
+      <DependentUpon>Recados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\Comunicacao\SelecionaUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\Comunicacao\SelecionaUsuario.Designer.cs">
+      <DependentUpon>SelecionaUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\Contatos\VisualizaContatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\Contatos\VisualizaContatos.Designer.cs">
+      <DependentUpon>VisualizaContatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario\Relatorios\RelatorioHorasTrabalhadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario\Relatorios\RelatorioHorasTrabalhadas.Designer.cs">
+      <DependentUpon>RelatorioHorasTrabalhadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util.cs" />
+    <Compile Include="DAO\BaseDAO.cs" />
+    <Compile Include="DAO\CargoDAO.cs" />
+    <Compile Include="DAO\PontoDAO.cs" />
+    <Compile Include="DAO\UsuarioDAO.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIPrincipal.Designer.cs">
+      <DependentUpon>MDIPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\CargoModel.cs" />
+    <Compile Include="MODEL\PontoModel.cs" />
+    <Compile Include="MODEL\UsuarioModel.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Administrativo\Cadastros\Cargo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Cargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrativo\Cadastros\Contato.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Contato.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrativo\Cadastros\Ponto.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Ponto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrativo\Cadastros\Usuario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Usuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrativo\Relatorios\RelatorioHorasTrabalhadas.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>RelatorioHorasTrabalhadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Administrativo\Rpt\RelatorioHorasTrabalhadas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RelatorioHorasTrabalhadas.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Common\DefaultForm.resx">
+      <DependentUpon>DefaultForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIPrincipal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MDIPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\Cadastros\AlteracaoUsuario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>AlteracaoUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\Comunicacao\BaixaAnexo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BaixaAnexo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\Comunicacao\Recados.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Recados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\Comunicacao\SelecionaUsuario.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>SelecionaUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\Contatos\VisualizaContatos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>VisualizaContatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario\Relatorios\RelatorioHorasTrabalhadas.resx">
+      <DependentUpon>RelatorioHorasTrabalhadas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RN\CargoRN.cs" />
+    <Compile Include="RN\PontoRN.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\AberturaDia2.bmp" />
+    <Content Include="Resources\Acesso2.ico" />
+    <Content Include="Resources\Agendamento.ico" />
+    <None Include="Resources\chave.ico" />
+    <Content Include="Resources\AreaAdmin.ico" />
+    <Content Include="Resources\BOOK06.ico" />
+    <Content Include="Resources\CLIP07.ICO" />
+    <Content Include="Resources\CLIP08.ICO" />
+    <Content Include="Resources\CLOCK.ICO" />
+    <Content Include="connectionStrings.txt" />
+    <Content Include="EmailTemplates\CadastroUsuario.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\CLOCK02.ICO" />
+    <Content Include="Resources\Configuracoes.ico" />
+    <Content Include="Resources\Grupo.ico" />
+    <None Include="Resources\InfoPonto5.jpg" />
+    <Content Include="Resources\NumericUpDown.ico" />
+    <Content Include="Resources\otheroptions.ico" />
+    <Content Include="Resources\OUTLOOK.ICO" />
+    <Content Include="Resources\REMOTEL.ICO" />
+    <Content Include="Resources\Report.ico" />
+    <Content Include="Resources\services.ico" />
+    <Content Include="Resources\Tarefas.ico" />
+    <Content Include="Resources\TIMER01.ICO" />
+    <Content Include="Resources\Usuario.ico" />
+    <Content Include="Resources\WRENCH.ICO" />
+    <None Include="Resources\LOGOENGEMA2N.JPG" />
+    <None Include="Resources\access97.ico" />
+    <None Include="Resources\LOGOENGEMA2PEQUENO.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Usuario\Rpt\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

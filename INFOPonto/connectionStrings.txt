@@ -1,0 +1,2 @@
+Data Source=SERVER-DADOS;Initial Catalog=InfoPonto;uid=infoponto;pwd=649731;TimeOut=0;
+Data Source=(local);Initial Catalog=InfoPonto;IntegratedSecurity="true";TimeOut=0;
